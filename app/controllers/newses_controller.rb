@@ -1,0 +1,2 @@
+class NewsesController < ApplicationController
+end

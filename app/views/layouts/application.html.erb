@@ -5,11 +5,26 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!--　文字コードの指定　-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--　Bootstrap CSS　-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!--  上書き CSS  -->
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
+  <header>
+    <h1>ここにトップ画像を配置</h1>
+    <%= render 'layouts/navbar' %>
+  </header>
+  
   <body>
     <%= yield %>
   </body>
+  
 </html>

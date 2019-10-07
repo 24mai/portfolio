@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+a:link{
+    color:yellow;
+}
+
+a:visit{
+    color : #fff000 ;
+}
+
+a:hover{
+    color : #ff69b4 ;
+}
+
+.navbar {
+    background-color: rgb(83, 83, 83) ;
+}
+
+.navbar .navbar-toggler {
+    font-size:12px;
+    background-color: rgb(83, 83, 83);
+    border-color: rgb(83, 83, 83);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#000000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+.table001 > th, td, tr {
+    padding : 2px
+}
+
+.table002 {
+    border : 1px solid #000000
+}
+
+.nav-tabs > .nav-item01, .nav-item02  {
+    background-color : #c0c0c0 ;
+}
+
+.news-table {
+    text-size-adjust: 10px ;
+    padding : 10px
+}
+
+
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+.footer-links {
+        text-align : center ;
+        padding : 80px 10px 80px 80px ;
+    }
+
+.row-001 {
+        background-color : #ffff00 ;
+        margin-right: -15px;
+        margin-left: -15px;
+        overflow : hidden ;
+}
