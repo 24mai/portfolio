@@ -1,0 +1,28 @@
+  <div class="row top-row justify-content-center">
+    <div class="col-md-6">
+        <div class="news overflow-auto">
+              <% @messages.each do |message| %>
+                <p class="title"><%=message.title %></p>
+                <p class="content"><%= message.content %></p>
+                <p class="content">（更新日時:　<%= message.created_at.to_s %>）</p>
+                <br/>
+              <% end %>
+              <br/>
+              <p class="write">
+                 <%= link_to image_tag('/assets/write.png', { :border => '0', :alt => '新規'}), new_message_path %>
+              </p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <br/>
+        <br/>
+      　<div class="container-fluid">
+        　<a class="twitter-timeline" data-width=fluid data-height="400" data-theme="light" data-link-color="#FAB81E" href="https://twitter.com/allntmr?ref_src=twsrc%5Etfw">Tweets by allntmr</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      　</div>
+    </div> 
+  </div>
+
+  <div class="container-full">
+    <div class="row bottomliner01">
+    </div>
+  </div>

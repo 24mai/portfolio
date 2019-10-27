@@ -1,0 +1,18 @@
+<div class="row form justify-content-center">
+  <div class="col-md-6">
+
+    <h3><%= @message.title %>の詳細ページ</h3>
+    <br/><br/>
+    <p>
+        タイトル   ：<%= @message.title %><br/>
+        更新内容  ：<%= @message.content %>
+    </p>
+    <br/><br/> 
+    
+    <%= link_to 'この内容を編集する', edit_message_path(@message) %>
+    <br/>
+    <%= link_to 'この内容を削除する', @message, method: :delete, data:{confirm: '削除しますか？' } %>
+    <br/>
+    <%= link_to 'TOPに戻る', messages_path %>
+  </div>
+</div>

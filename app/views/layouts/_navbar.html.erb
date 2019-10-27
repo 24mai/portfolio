@@ -1,21 +1,16 @@
-<div class="container-fluid fixed-top">
-                <nav class="navbar navbar-expand-sm p-1"><!--  .navbar(ナビバーの表示)  .navbar-expand(レスポンシブ対応)  .navbar-light()  .bg-dark(背景色ー黒)  -->
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false" aria-label="レスポンシブナビゲーション"><!--  button type="button"()  .navbar-toggler()  .ml-auto()  .data-toggle="collapse"(折り畳み機能) .data-target="#navbar"(ターゲットを示す) .aria-controls="Navbar"(対象を示す) .aria-expanded="false"(開閉状態)  .aria-label="?"() -->
-                        <span class="navbar-toggler-icon"></span><!--  .navbar-toggler-icon(トグルアイコン)  .bg-(背景色)  -->
-                    </button>
-                    <div class="collapse navbar-collapse" id="Navber">
-                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0"><!--  .navbar-nav(ドロップダウンのサポート)  .ml-(マージンレフト)  .mt-lg-(マージントップーlg以上)  -->
-                                <li class="nav-item small"><a class="nav-link active" href="xxx">ABOUT US</a></li>
-                                <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle small" role="button" data-toggle="dropdown" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                              <a class="dropdown-item small" href="xxx">準備中</a>
-                                              <a class="dropdown-item small" href="xxx">準備中</a>
-                                              <a class="dropdown-item small" href="xxx">準備中</a>
-                                        </div>
-                                <li class="nav-item small"><a class="nav-link" href="xxx">GitHub</a></li>
-                            </ul>
-                    </div>
-                </nav>
-            </div>
-            
+<div class="container-full fixed-top">
+  <nav class="navbar navbar-expand-sm p-1">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false" aria-label="レスポンシブナビゲーション"><!--  button type="button"()  .navbar-toggler()  .ml-auto()  .data-toggle="collapse"(折り畳み機能) .data-target="#navbar"(ターゲットを示す) .aria-controls="Navbar"(対象を示す) .aria-expanded="false"(開閉状態)  .aria-label="?"() -->
+        <span class="navbar-toggler-icon"></span><!--  .navbar-toggler-icon(トグルアイコン)  .bg-(背景色)  -->
+    </button>
+    <div class="collapse navbar-collapse" id="Navber">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0"><!--  .navbar-nav(ドロップダウンのサポート)  .ml-(マージンレフト)  .mt-lg-(マージントップーlg以上)  -->
+           <li class="nav-item nav-text"><%= link_to 'TOP', root_path, class:'nav-link' %></li>
+           <li class="nav-item nav-text"><%= link_to 'ABOUT', abouts_path, class:'nav-link' %></li>
+           <li class="nav-item nav-text"><%= link_to 'PORTFOLIO', portfolios_path, class:'nav-link' %></li>
+           <li class="nav-item nav-text"><%= link_to 'GitHub', 'https://github.com/24mai', class:'nav-link' %></li>
+           <li class="nav-item nav-text"><%= link_to 'EVERNOTE', 'https://www.evernote.com/shard/s393/sh/e1253ff5-3797-4906-b59f-6169f522b91a/7e4d76f3fa6b9918c6484a5cdf06dd61', class:'nav-link' %></li>
+      </ul>
+    </div>
+  </nav>
+</div>

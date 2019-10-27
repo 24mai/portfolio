@@ -1,0 +1,21 @@
+<div class="row form justify-content-center">
+  <div class="col-md-5">
+    <h3>更新履歴　投稿フォーム</h3>
+    </br>
+    </br>
+    <%= render 'form', message: @message %>
+    <br/>
+    <%= link_to 'TOPに戻る', messages_path %>
+  </div>
+  <div class="col-md-5">
+    <h3>投稿一覧</h3>
+    <div class="news overflow-auto">
+    <% @messages.each do |message| %>
+      <p class="title"><%=link_to message.title, message %></p>
+      <p class="content"><%= message.content %></p>
+      <p class="content">（更新日時:　<%= message.created_at.to_s %>）</p>
+      <br/>
+    <% end %>
+    </div>
+  </div>
+</div>

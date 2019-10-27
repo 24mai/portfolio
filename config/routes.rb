@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
-  #TOPページ
-  root to: 'newses#index'
-  resources :newses
+  root to: 'messages#index'
+
+  get 'ABOUT',to:'abouts#index'
+
+  get 'PORTFOLIO',to:'portfolios#index'
+  
+  resources :messages
+  resources :abouts, only: [:index]
+  resources :portfolios, only: [:index]
   
 end

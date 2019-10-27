@@ -11,7 +11,7 @@
     <!--　Bootstrap CSS　-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <!--  上書き CSS  -->
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="application.css">
     
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -19,12 +19,26 @@
 
 
   <header>
-    <h1>ここにトップ画像を配置</h1>
+        <!--  社名ロゴ画像・営業時間  -->
+    <div class="container-fluid fixed-top bg-white">
+      <div class="row title-top">
+        <div class="col-12 col-md-8">
+            <img src="assets/24saka_top.png">
+        </div>
+        <div class="col-12 col-md-4">
+        
+        </div>
+      </div>
+    </div>
+    
     <%= render 'layouts/navbar' %>
   </header>
   
   <body>
+    <%= render 'layouts/flash_messages' %>
+    <dev class="container yield-setting">
     <%= yield %>
+    </div>
   </body>
   
 </html>
